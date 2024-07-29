@@ -1,0 +1,15 @@
+<div>
+  <ul>
+    <li *ngFor="let foodItem of food; trackBy: trackById" class="food-item" (mouseover)="onMouseOver(foodItem)" (mouseleave)="onMouseLeave()">
+      <button class="food-button" (click)="onSelectFood(foodItem)">
+        <img [src]="'http://localhost:3000/' + foodItem.image.src" [alt]="foodItem.image.alt" />
+        <h3>{{ foodItem.title }}</h3>
+      </button>
+      <div class="hover-content" *ngIf="hoveredFood === foodItem">
+        <h2>{{ foodItem.title }}</h2>
+        <p *ngIf="foodItemDescription" class="description">{{ foodItemDescription }}</p>
+        <button class="hover-button" (click)="onToggleFavourite(foodItem, $event)">{{ buttonText }}</button>
+      </div>
+    </li>
+  </ul>
+</div>

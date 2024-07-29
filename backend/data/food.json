@@ -1,0 +1,134 @@
+[
+  {
+    "id": "p1",
+    "title": "Nebula Delight",
+    "image": {
+      "src": "food1.jpg",
+      "alt": "Nebula Delight"
+    },
+    "lat": 44.5588,
+    "lon": -80.344,
+    "isFavorite": false
+  },
+  {
+    "id": "p2",
+    "title": "Eclipse Bliss",
+    "image": {
+      "src": "food2.jpg",
+      "alt": "Eclipse Bliss"
+    },
+    "lat": 25.0,
+    "lon": 0.0,
+    "isFavorite": false
+  },
+  {
+    "id": "p3",
+    "title": "Aurora Morsels",
+    "image": {
+      "src": "food3.jpg",
+      "alt": "Aurora Morsels"
+    },
+    "lat": 27.9881,
+    "lon": 86.925,
+    "isFavorite": false
+  },
+  {
+    "id": "p4",
+    "title": "Galactic Swirl",
+    "image": {
+      "src": "food4.jpg",
+      "alt": "Galactic Swirl"
+    },
+    "lat": 18.2208,
+    "lon": -66.5901,
+    "isFavorite": false
+  },
+  {
+    "id": "p5",
+    "title": "Mystic Essence",
+    "image": {
+      "src": "food5.jpg",
+      "alt": "Mystic Essence"
+    },
+    "lat": 37.9715,
+    "lon": 23.7257,
+    "isFavorite": false
+  },
+  {
+    "id": "p6",
+    "title": "Starlight Nibbles",
+    "image": {
+      "src": "food6.jpg",
+      "alt": "Starlight Nibbles"
+    },
+    "lat": -3.4653,
+    "lon": -62.2159,
+    "isFavorite": false
+  },
+  {
+    "id": "p7",
+    "title": "Celestial Whimsy",
+    "image": {
+      "src": "food7.jpg",
+      "alt": "Celestial Whimsy"
+    },
+    "lat": 64.9631,
+    "lon": -19.0208,
+    "isFavorite": false
+  },
+  {
+    "id": "p8",
+    "title": "Dreamscape Crunch",
+    "image": {
+      "src": "food8.jpg",
+      "alt": "Dreamscape Crunch"
+    },
+    "lat": 34.9949,
+    "lon": 135.785,
+    "isFavorite": false
+  },
+  {
+    "id": "p9",
+    "title": "Whispering Zephyr",
+    "image": {
+      "src": "food9.jpg",
+      "alt": "Whispering Zephyr"
+    },
+    "lat": -18.2871,
+    "lon": 147.6992,
+    "isFavorite": false
+  },
+  {
+    "id": "p10",
+    "title": "Twilight Bites",
+    "image": {
+      "src": "food10.jpg",
+      "alt": "Twilight Bites"
+    },
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "isFavorite": false
+  },
+  {
+    "id": "p11",
+    "title": "Luminous Whirl",
+    "image": {
+      "src": "food11.jpg",
+      "alt": "Luminous Whirl"
+    },
+    "lat": 36.1069,
+    "lon": -112.1129,
+    "isFavorite": false
+  },
+  {
+    "id": "p12",
+    "title": "Phantom Drizzle",
+    "image": {
+      "src": "food12.jpg",
+      "alt": "Phantom Drizzle"
+    },
+    "lat": 45.4408,
+    "lon": 12.3155,
+    "isFavorite": false
+  }
+]

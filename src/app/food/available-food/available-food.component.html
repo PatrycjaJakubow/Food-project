@@ -1,0 +1,15 @@
+<app-food-container title="Available Food">
+  @if (isFetching() && !error()) {
+    <p class="fallback-text">Fetching available food...</p>
+  }
+
+  @if (error()) {
+    <p class="fallback-text">{{ error() }}</p>
+  }
+  @if (food() && food()!.length > 0) {
+    <app-food [food]="food()!" (toggleFavourite)="onAddToFavourite($event)" buttonText="Add to Favourites" [showDescription]="true"/>
+  } @else if (!food()) {
+    <p class="fallback-text">Unfortunately, no food could be found.</p>
+  }
+</app-food-container>
+

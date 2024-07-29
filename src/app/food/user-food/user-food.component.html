@@ -1,0 +1,15 @@
+<app-food-container title="Your Favorite Food">
+  @if (isFetching() && !error()) {
+    <p class="fallback-text">Fetching favourite food...</p>
+  }
+
+  @if (error()) {
+    <p class="fallback-text">{{ error() }}</p>
+  }
+  @if (food() && food()!.length > 0) {
+    <app-food [food]="food()!" (selectFood)="onRemoveFood($event)" (toggleFavourite)="onRemoveFood($event)" buttonText="Remove from Favourites" [showDescription]="false"/>
+  } @else if (!food()) {
+    <p class="fallback-text">Unfortunately, no food could be found.</p>
+  }
+</app-food-container>
+

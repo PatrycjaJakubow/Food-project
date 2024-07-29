@@ -1,0 +1,18 @@
+@if (error()) {
+  <app-error-modal title="An error occurred" [message]="error()"/>
+}
+
+<header>
+  <img src="food-logo.png" alt="Stylized globe" />
+  <h1>FoodPicker</h1>
+  <p>
+    Create your personal collection of food you would like to try or you
+    have tried.
+  </p>
+</header>
+
+<main>
+  <app-available-food />
+
+  <app-user-food />
+</main>

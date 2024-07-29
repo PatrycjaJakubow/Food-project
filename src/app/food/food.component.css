@@ -1,0 +1,113 @@
+ul {
+  max-width: 80rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-gap: 2rem;
+  margin: 2rem auto;
+  padding: 0;
+  list-style: none;
+}
+
+.food-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background: #37474F; 
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-out;
+}
+
+.food-item button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.food-item:nth-child(odd) button:hover,
+.food-item:nth-child(odd) button:focus,
+.food-item:nth-child(even) button:hover,
+.food-item:nth-child(even) button:focus {
+  box-shadow: 0 0 8px 4px rgba(144, 202, 249, 0.6); 
+  border-radius: 8px;
+}
+
+.food-item:nth-child(odd) button:hover,
+.food-item:nth-child(odd) button:focus {
+  transform: rotate(5deg);
+}
+
+.food-item:nth-child(even) button:hover,
+.food-item:nth-child(even) button:focus {
+  transform: rotate(-5deg);
+}
+
+.food-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.food-item h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  margin: 1rem auto;
+  background-color: #90CAF9;
+  color: #37474F;
+  border-radius: 4px;
+  padding: 0.15rem 0.35rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hover-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-item:hover .hover-content {
+  display: flex;
+}
+
+.hover-content h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.hover-content p {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 90%;
+}
+
+.hover-content .hover-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #90CAF9; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.hover-content .hover-button:hover {
+  background-color: #64B5F6;
+}
